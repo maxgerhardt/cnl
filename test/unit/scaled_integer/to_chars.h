@@ -240,6 +240,13 @@ namespace {
             test<7>("-517523", cnl::scaled_integer<int, cnl::power<0, 10>>(-517523));
         }
 
+        TEST(to_chars, scaled_integer_decimal_fractional)  // NOLINT
+        {
+            test<17>(
+                    "0.000000000049112",
+                    cnl::scaled_integer<int, cnl::power<-40>>{.00000000005});
+        }
+
         TEST(to_chars, scaled_integer_octal_positive)  // NOLINT
         {
             test<9>("634124.25", cnl::scaled_integer<int, cnl::power<-1, 8>>(634124.25));
