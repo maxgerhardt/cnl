@@ -1,0 +1,25 @@
+{
+    "name": "Compositional Numeric Library",
+    "description": "A Compositional Numeric Library for C++",
+    "version": "1.1.7",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/johnmcfarlane/cnl.git"
+    },
+    "homepage": "https://johnmcfarlane.github.io/cnl/",
+    "authors": {
+        "name": "John McFarlane",
+        "email": "github@john.mcfarlane.name",
+        "url": "https://twitter.com/JSAMcFarlane",
+        "maintainer": true
+    },
+    "license": "BSL-1.0",
+    "platforms": "*",
+    "frameworks": "*",
+    "build": {
+        "flags": [
+            "-I include/"
+        ]
+    }
+}
+		
